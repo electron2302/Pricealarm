@@ -1,0 +1,34 @@
+{
+    "debug":true,
+    "sleeptime":1,
+    "interval":6,
+    "mail":{
+        "ssl":true,
+        "SMTP_host":"smtp.gmail.com",
+        "SMTP_port":465,
+        "SMTP_user":"sender@gmail.com",
+        "SMTP_password":"Secret",
+        "Frame":{
+            "Text":"Hi!\nHave you heard it already ?\n{msg}\n\nin love\nyour software",
+            "HTML":"<html><head></head><body><p>Hi!<br> Have you heard it already ?<br>{msg}<br><br>in love<br>your software</p></body></html>"
+        },
+        "to":"receiver@gmail.com"
+    },
+    "db":{
+        "host":"localhost",
+        "user":"DatabaseUserName",
+        "passwd":"Secret",
+        "port":3306,
+        "db":"DatabaseName"
+    },
+    "content":{
+        "NewLowPonit":{
+            "Title":"New lowpoint ! {name} for {current_price}",
+            "msg":"{name} reached a new low point with the price of {current_price} cent befor that the lowest was {lowest_price} cent"
+        },
+        "ItGotCheaper":{
+            "Title":"{name} got cheaper",
+            "msg":"The price of {name} dropt from {last_price} to {current_price}, but the lowest was {lowest_price}"
+        }
+    }
+}

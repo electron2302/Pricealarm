@@ -1,0 +1,4 @@
+apscheduler
+mysql-connector
+requests
+lxml
